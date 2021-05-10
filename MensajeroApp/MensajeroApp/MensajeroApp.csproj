@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +44,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hilos\HiloCliente.cs" />
+    <Compile Include="Hilos\HiloServer.cs" />
+    <Compile Include="Partials\Program.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -54,6 +58,11 @@
       <Project>{E98F04E1-BB2A-4CE2-8924-B5A3DF252A09}</Project>
       <Name>MensajeroModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SocketsUtils\SocketsUtils.csproj">
+      <Project>{BB1DA104-6212-466C-B1EF-CFB21C6D4845}</Project>
+      <Name>SocketsUtils</Name>
+    </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
